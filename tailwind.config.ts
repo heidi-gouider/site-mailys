@@ -27,6 +27,10 @@ const config: Config = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        anton: ['var(--font-anton)'],
+        poppins: ['var(--font-poppins)'],
+      },
       colors: {
         beige: {
           light: '#F8F5F1',

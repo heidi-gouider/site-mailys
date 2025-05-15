@@ -2,7 +2,29 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
+import { Anton, Poppins } from "next/font/google";
+
+const anton = Anton({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-anton',
+  display: 'swap',
+});
+
+const poppins = Poppins({
+  weight: ['300', '400', '500', '700'],
+  subsets: ['latin'],
+  variable: '--font-poppins',
+  display: 'swap',
+});
+
+// const bristol = Bristol({
+//   weight: '400',
+//   subsets: ['latin'],
+//   variable: '--font-bristol',
+//   display: 'swap',
+// })
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +49,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${anton.variable} ${poppins.variable}`}
       >
         {/* < Navbar visible={true} /> */}
         <main>

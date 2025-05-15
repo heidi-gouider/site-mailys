@@ -5,10 +5,11 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
-import Portfolio from "@/components/Portfolio";
-import Temoignage from "@/components/Temoignage";
-import Showreel from "@/components/Showreel";
+// import Temoignage from "@/components/Temoignage";
+import Partners from "@/components/Partners";
 import Cgu from "@/components/Cgu";
+import Tarifs from "@/components/Tarifs";
+import Project from "@/components/Project";
 // import { useEffect } from 'react';
 // import { useTranslation } from '@/hooks/useTranslation';
 
@@ -29,18 +30,21 @@ export default function Home() {
     <section id="about">
     <About />
     </section>
-    {/* <section id="showreel">
-    <Showreel />
-    </section> */}
+    <section id="project">
+    <Project />
+    </section>
     <section id="service">
     <Services />
     </section>
-    <section>
-    <Portfolio />
+    <section id="tarifs">
+    <Tarifs />
     </section>
-    <section>
+    <section id="partners">
+    <Partners />
+    </section>
+    {/* <section>
     <Temoignage />
-    </section>
+    </section> */}
     <section id="contact">
     <Contact />
     </section>

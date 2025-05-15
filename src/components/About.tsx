@@ -7,8 +7,7 @@ export default function About() {
         
         {/* Image */}
         <div 
-        // className="w-full h-48"
-        className="w-full h-52"
+        className="w-full"
         >
           <img
             src="/presentation.png"
@@ -19,7 +18,7 @@ export default function About() {
 
         {/* Texte */}
         <div>
-          <h2 className="text-3xl md:text-5xl font-bold text-violet mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 mt-5">
             À propos
           </h2>
           <div className="space-y-4 text-lg md:text-xl leading-relaxed"></div>
@@ -48,7 +47,7 @@ export default function About() {
           découvrir de nouvelles technicités.
 
         </p>
-        <p className="text-lg md:text-xl leading-relaxed">
+        <p className="mt-4 text-lg md:text-xl leading-relaxed bg-[#F8F5F1]">
           Pour chaque projet, je m’investis
           pleinement dans le but de donner
           vie à vos idées, de transmettre un
@@ -57,7 +56,7 @@ export default function About() {
           y apportant mon identité artistique.
 
         </p>
-        <p className="mt-4 text-lg md:text-xl leading-relaxed">
+        <p className=" text-lg md:text-xl leading-relaxed bg-[#F8F5F1]">
           Je vous invite à parcourir mon site
           pour découvrir quelques-unes de
           mes réalisations. Et si vous avez la

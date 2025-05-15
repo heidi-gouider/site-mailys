@@ -2,7 +2,8 @@
 
 export default function CGU() {
     return (
-      <main className="max-w-3xl mx-auto p-6 text-sm leading-relaxed">
+      <section className="bg-[#E4E2DD]">
+      <main className="max-w-3xl mx-auto p-6 text-sm leading-relaxed bg-[#F8F5F1]">
         <h1 className="text-2xl font-bold mb-6">Conditions Générales d'Utilisation</h1>
   
         <p>
@@ -40,6 +41,7 @@ export default function CGU() {
           Les présentes CGU sont régies par la loi française. En cas de litige, les tribunaux compétents seront ceux de la juridiction du siège de l’éditeur.
         </p>
       </main>
+      </section>
     );
   }
   

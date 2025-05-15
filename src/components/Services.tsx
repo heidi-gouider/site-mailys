@@ -23,9 +23,10 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 bg-[#F8F5F1] text-gray-text">
+    <section id="services" className="py-20 bg-[#E4E2DD] text-gray-text">
+            <div className="w-4/5 mb-20 h-0.5 bg-black ml-10"></div>
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-12">Services Proposés</h2>
+        <h2 className="text-4xl font-bold text-end mb-12">Services Proposés</h2>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
