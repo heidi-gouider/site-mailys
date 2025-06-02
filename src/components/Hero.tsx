@@ -99,7 +99,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="rounded-1xl px-8 py-10 max-w-3xl w-full bg-[#E4E2DD]/40 mx-4 text-center text-[#202020]"
+          className="rounded-1xl px-8 py-10 max-w-3xl w-full bg-[#E4E2DD]/40 mx-4 text-center"
         >
           <h1 className="text-4xl md:text-6xl font-bold mt-5 mb-4">
             MAILYS GOUIDER
@@ -109,7 +109,7 @@ export default function Hero() {
           <p className="text-[10px] sm:text-xs md:text-sm lg:text-base whitespace-nowrap tracking-wide mb-4">
             MONTAGE · ETALONNAGE · MOTION DESIGN
           </p>
-          <div className="w-1/2 h-0.5 bg-[#202020] mx-auto mt-5" />
+          {/* <div className="w-1/2 h-0.5 bg-[#202020] mx-auto mt-5" /> */}
         </motion.div>
       </div>
       {/* <div className="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-b from-[#E4E2DD] to-transparent pointer-events-none" /> */}

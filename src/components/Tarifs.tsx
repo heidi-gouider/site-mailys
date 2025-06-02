@@ -40,12 +40,12 @@ export default function Tarifs() {
   ];
 
   return (
-    <section className='bg-[#E4E2DD]'>
+    <section className="bg-[#E4E2DD]">
       <div className="max-w-3xl mx-auto p-6 ml-5">
         <h2 className="text-3xl font-bold">LA JOURNÉE</h2>
         {/* <div className="w-full h-0.5 bg-black"></div> */}
       </div>
-      <div className="w-4/5 mb-5 h-0.5 bg-black ml-10"></div>
+      {/* <div className="w-4/5 mb-5 h-0.5 bg-black ml-10"></div> */}
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 justify-center justify-items-center mx-auto">
         {tarifs.map((tarifs, index) => (
@@ -89,7 +89,7 @@ export default function Tarifs() {
         <h2 className="text-3xl font-bold">LES FORFAITS</h2>
       </div>
 
-      <div className="w-4/5 mb-5 h-0.5 bg-black ml-10"></div>
+      {/* <div className="w-4/5 mb-5 h-0.5 bg-black ml-10"></div> */}
 
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 justify-center justify-items-center mx-auto">

@@ -53,7 +53,8 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="bg-[#E4E2DD] py-20">
+    <section id="contact" className="bg-[#E4E2DD] py-20 mb-12">
+              <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">CONTACT</h2>
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -61,8 +62,8 @@ const ContactForm = () => {
         viewport={{ once: true }}
         className="max-w-2xl mx-auto bg-[#F8F5F1] shadow-xl rounded-2xl p-8 text-[#202020]"
       >
-        <h2 className="text-3xl font-bold text-center mb-2">Me contacter</h2>
-        <div className="w-16 h-0.5 bg-[#202020] mx-auto mb-8" />
+        {/* <h2 className="text-3xl font-bold text-center mb-2">Me contacter</h2> */}
+        {/* <div className="w-16 h-0.5 bg-[#202020] mx-auto mb-8" /> */}
 
         {status && (
           <div

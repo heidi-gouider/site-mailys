@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 // import { motion, AnimatePresence } from "framer-motion";
 
-const categories = ["all", "documentaire", "pub", "clip"]
+// const categories = ["all", "documentaire", "pub", "clip"]
 const projects = [
   {
     title: "back Stage",
@@ -50,21 +50,21 @@ const projects = [
 
 export default function Projets(){
 
-const [filter, setFilter] = useState("all");
+// const [filter, setFilter] = useState("all");
 
-const filteredProjects =
-filter === "all"
-  ? projects
-  : projects.filter((p) => p.category === filter);  
+// const filteredProjects =
+// filter === "all"
+//   ? projects
+//   : projects.filter((p) => p.category === filter);  
 
   return (
     <section className="bg-[#E4E2DD] py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-bold mb-6">PROJETS</h2>
-        <div className="w-4/5 h-0.5 bg-black mx-auto mb-12" />
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 mt-12">PROJETS</h2>
+        {/* <div className="w-4/5 h-0.5 bg-black mx-auto mb-12" /> */}
 
         {/* Bannière de filtres */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        {/* <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((cat) => (
             <button
               key={cat}
@@ -79,19 +79,20 @@ filter === "all"
               {cat.toUpperCase()}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Grille des projets filtrés */}
         <div className="space-y-20">
-          {filteredProjects.map((project, index) => {
-            const isEven = index % 2 === 0;
+          {/* {filteredProjects.map((project, index) => {
+            const isEven = index % 2 === 0; */}
 
-        {/* <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+        {/* <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4"> */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div
               key={index}
               onClick={() => setSelectedProject(project)}
-              className="relative overflow-hidden rounded-2xl shadow-lg break-inside-avoid cursor-pointer"
+              className="relative overflow-hidden rounded-1xl shadow-lg break-inside-avoid cursor-pointer"
             >
               <img
                 src={project.image}
@@ -103,7 +104,7 @@ filter === "all"
               </div>
             </div>
           ))}
-        </div> */}
+        </div>
 
         {/* {projects.map((project, i) => (
   <div key={i} className="flex flex-col md:flex-row items-center my-10 gap-6">
@@ -116,7 +117,7 @@ filter === "all"
 ))} */}
 
 
-            return (
+            {/* return (
 
               <div
                 key={index}
@@ -135,8 +136,8 @@ filter === "all"
                   <p className="text-gray-700 leading-relaxed">{project.description}</p>
                 </div>
               </div>
-            );
-          })}
+            ); */}
+          {/* })} */}
         </div>
       </div>
     </section>

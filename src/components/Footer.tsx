@@ -3,17 +3,17 @@ import Link from "next/link";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Mail } from "lucide-react";
 
-            {/* {<p>© 2025 Mon Super Site</p>}
+{/* {<p>© 2025 Mon Super Site</p>}
             {<ul className="mt-2">
                 <li><link rel="stylesheet" href="#Partners" />Partenaires</li>
                 <li><link href="#Cgu"></link>Conditions d'utilisations</li>
             </ul>} */}
 
-export default function Footer () {
-    return(
-        <footer id="bottom" className=" w-full bg-[#F8F5F1]/60 text-[#000000]  bottom-0 py-6 px-4">
+export default function Footer() {
+  return (
+    <footer id="bottom" className=" w-full bg-[#F8F5F1]/60  bottom-0 py-6 px-4 mt-12">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        
+
         {/* Colonne 1 */}
         <div>
           <h3 className="text-lg font-semibold mb-4">À propos</h3>
@@ -31,7 +31,7 @@ export default function Footer () {
             <li><a href="#">Nom de la structure</a></li>
             <li><a href="#">Devenir partenaire</a></li>
           </ul> */}
-          <div className="flex space-x-4">
+        <div className="flex space-x-4">
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <FaInstagram className="h-6 w-6 text-[#E1306C] hover:scale-110 transition-transform" />
           </a>
@@ -50,7 +50,7 @@ export default function Footer () {
           <a
             href="#contact"
             className="px-6 py-2 rounded-lg bg-[#202020] text-white font-medium hover:bg-[#444] transition disabled:bg-gray-400"
-            >
+          >
             Contactez-moi
           </a>
         </div>
